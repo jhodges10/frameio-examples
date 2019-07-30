@@ -1,0 +1,5 @@
+frameioclient
+requests
+python-dotenv
+mimetypes
+fuzzywuzzy
