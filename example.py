@@ -47,10 +47,12 @@ class FIO:
 
         # Extract the matching one
         matching_name = process.extractOne(project_name, project_names_list)[0]
+
+        print(f"Matched to project: {matching_name}")
         project_id = project_dict[matching_name] # Gets relevant value for matched key
         self.project_id = project_id
-        print(self.project_id)
-
+        
+        print(f"Project ID set to: {self.project_id}")
         self.client = client
 
 
