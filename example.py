@@ -51,13 +51,22 @@ class FIO:
         print(f"Matched to project: {matching_name}")
         project_id = project_dict[matching_name] # Gets relevant value for matched key
         self.project_id = project_id
-        
+
         print(f"Project ID set to: {self.project_id}")
         self.client = client
 
 
     @classmethod
     def uploader(self, parent_asset_id, file_loc):
+        """
+        Attributes
+        ----------
+        parent_asset_id : str
+            A UUID representing the parent asset ID.
+        file_loc : str
+            The location of the file you want to upload
+        """
+
         # Create a new asset.
         asset = self.client.create_asset(
             parent_asset_id=parent_asset_id,
