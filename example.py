@@ -75,7 +75,7 @@ if __name__ == "__main__":
     parent_asset_id = "PUT_PARENT_ASSET_ID_HERE"
 
     # Instantiate the Frame.io client and connect it to the right project using fuzzy matching
-    frame_io = FIO("Project name") # Initialize frame.io client attached to the correct project - using fuzzy matching against your project names
+    frame_io = FIO("Project name")
     
     # Upload file
     frame_io.uploader(parent_asset_id, your_file_to_upload)
